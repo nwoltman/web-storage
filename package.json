@@ -1,0 +1,39 @@
+{
+  "name": "@nwoltman/web-storage",
+  "version": "0.1.0",
+  "description": "Convenient interfaces wrapping browser Web Storage APIs",
+  "keywords": [
+    "web",
+    "storage",
+    "webstorage",
+    "localstorage",
+    "sessionstorage"
+  ],
+  "homepage": "https://github.com/nwoltman/web-storage",
+  "bugs": {
+    "url": "https://github.com/nwoltman/web-storage/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nwoltman/web-storage.git"
+  },
+  "license": "MIT",
+  "author": "Nathan Woltman <nwoltman@outlook.com>",
+  "publishConfig": {
+    "access": "public"
+  },
+  "type": "module",
+  "main": "src/index.js",
+  "types": "src/index.d.ts",
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "test": "node --test --experimental-test-coverage --test-coverage-include=src/**/*.js --test-coverage-lines=100 --test-coverage-branches=100 --test-coverage-functions=100",
+    "typecheck": "tsc --noEmit --allowJs --checkJs"
+  },
+  "devDependencies": {
+    "jsdom": "^29.1.1",
+    "typescript": "^6.0.3"
+  }
+}
